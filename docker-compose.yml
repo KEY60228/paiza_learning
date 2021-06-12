@@ -1,0 +1,8 @@
+version: '3'
+services:
+  gcc:
+    image: 'gcc:10'
+    volumes:
+      - ./src:/src/c
+    working_dir: /src/c
+    tty: true
